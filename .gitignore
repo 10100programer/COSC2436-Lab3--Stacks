@@ -29,3 +29,6 @@
 *.app
 *.db
 *.opendb
+
+# TEMP files 
+*~$b3--Stacks.docx
