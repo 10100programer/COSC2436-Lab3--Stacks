@@ -48,13 +48,13 @@ std::string splashwrap(std::string input)// need to fix drift issue
 	}
 	return input;
 }
-int splash(std::string title = "Untitled", std::string purpose = "N/A") //splash screen for programs
+int splash(std::string title = "Untitled", std::string purpose = "N/A",bool usings = true) //splash screen for programs
 {
 	
 	//std::cout << "********************************************************************\n";
 	std::cout << spacer;
-	std::cout << " Using Comsci.h \n";
-	std::cout << " Program Name	: "<< title << std::endl;
+	if (usings) { std::cout << std::endl<< " Using Comsci.h"; }
+	std::cout <<std::endl<< " Program Name	: "<< title << std::endl;
 	std::cout << " Description	: " << splashwrap(purpose) << std::endl;;
 	std::cout << spacer<<std::endl;
 	//std::cout << "********************************************************************\n";
@@ -63,7 +63,7 @@ int splash(std::string title = "Untitled", std::string purpose = "N/A") //splash
 
 void pause(std::string word = "Press any key to continue\n") //easy pause command
 {
-	std::cout << word;
+	std::cout << std::endl<< word;
 	std::cin.get();
 }
 int color(std::string doscolor) //Simple color handler
