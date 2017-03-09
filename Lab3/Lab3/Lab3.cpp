@@ -34,8 +34,6 @@ void a17_3()//start point for Lab 17.3 Fun with Stacks
 		std::cout << fibonacci_stack(enter);
 		pause();
 	}
-
-
 }
 void mainmenu()
 {
@@ -81,7 +79,7 @@ int fibonacci_stack(int num)
 			stack1.pop();
 			STS2 = stack1.top();
 			stack1.pop();
-			//stack sould be empty
+			//stack should be empty
 			STS3=STS1 + STS2;
 			stack1.push(STS1);
 			stack1.push(STS3);
