@@ -3,13 +3,16 @@
 
 #include "stdafx.h"
 #include "Comsci.h"
+#include "headers\linkedList.h"
+#include "headers\myStack.h"
+#include "headers\linkedStack.h"
 void a17_2();
 void a17_3();
 void mainmenu();
 int main()
 {
 	splash("COSC2436 Lab3 Stacks", "Implementation of Stacks as Arrays and Linked Lists",false);
-	Sleep(3500);
+	Sleep(1750);
 	system("cls");
 	mainmenu();
 	pause();
@@ -17,7 +20,7 @@ int main()
 }
 void a17_2()//start point for Lab 17.2 Implementation of Stacks as Arrays and Linked Lists
 {
-
+	new stackType TESTstack;
 }
 void a17_3()//start point for Lab 17.3 Fun with Stacks
 {

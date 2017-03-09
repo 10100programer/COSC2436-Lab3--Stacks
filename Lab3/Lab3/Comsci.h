@@ -5,7 +5,8 @@ Version	:1.2b
 Created	:April		25th 2015
 Modified:January	31th 2017
 */
-
+#ifndef Comsci_H
+#define Comsci_H
 //#include "stdafx.h"
 #include <iostream>
 #include "windows.h"
@@ -101,3 +102,4 @@ std::string centertext(std::string imput)
 
 }
 //EOF
+#endif
