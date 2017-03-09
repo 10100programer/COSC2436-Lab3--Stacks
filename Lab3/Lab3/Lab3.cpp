@@ -6,6 +6,7 @@
 #include "headers\linkedList.h"
 #include "headers\myStack.h"
 #include "headers\linkedStack.h"
+#include "headers\stackADT.h"
 void a17_2();
 void a17_3();
 void mainmenu();
@@ -20,7 +21,8 @@ int main()
 }
 void a17_2()//start point for Lab 17.2 Implementation of Stacks as Arrays and Linked Lists
 {
-	new stackType TESTstack;
+	linkedStackType<std::string> stack1;
+	stack1.push("Hello Stack");
 }
 void a17_3()//start point for Lab 17.3 Fun with Stacks
 {
