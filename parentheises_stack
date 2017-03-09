@@ -1,0 +1,36 @@
+bool func(std::string input)
+{
+	int length = input.size()//returns size of string
+	int count=0;
+	bool tru=true;
+	int p1 p2;
+	std::string chaar;
+	linkedStackType<int> stack//define stack
+	while (count < length)
+	{
+		chaar=input[count];
+		if(chaar == "(" || chaar == ")")
+			stack.push(input[count])
+		count++;
+	}// parantheese are accounted for
+	while (stack.isEmptyStack!= true)
+	{
+	if (stack.top() == ")")
+	{
+		p1++;
+		stack.pop();
+	}
+	if (stack.top() == "(")
+	{
+		stack.pop();
+		p2++;
+	}
+	}
+	if (p1 != p2)
+	{
+	tru = false;
+	}
+	return tru;
+}
+//() good
+//( bad
